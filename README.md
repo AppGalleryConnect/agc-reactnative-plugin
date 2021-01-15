@@ -1,11 +1,11 @@
-# agc-cordova-plugin
+# agc-reactnative-plugin
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](./LICENCE)
 
-This repo contains the source code for AGC cordova-plugin Demos, which are developed by the AppGallery Connect team.
+This repo contains the source code for AGC reactnative-plugin Demos, which are developed by the AppGallery Connect team.
 
 These demos enable access to using specific APIs. For more information
 about demos, and how to use them, see
-[Official Documentations](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-cordova-usage-0000001063539743).
+[Official Documentations](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-reactnative-usage-0000001072110443).
 
 
 ## Introduction
@@ -13,11 +13,11 @@ These are the available plugins in this repository.
 
 | Demo | Version | Download | Documentation |
 |--------|-----|-----|-----|
-| [agc-remoteconfig-cordova](./agc-remoteconfig-cordova) | [![version](https://img.shields.io/badge/NPM-1.1.0-yellow)](./agc-remoteconfig-cordova) | [![Download](https://img.shields.io/badge/DOWNLOAD-5/WEEK-yellow)](https://www.npmjs.com/package/@cordova-plugin-agconnect/remoteconfig) |[Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-cordova-usage-0000001063539743) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/cordova-remoteconfig-overview-0000001063967581) |
-| [agc-crash-cordova](./agc-crash-cordova) | [![version](https://img.shields.io/badge/NPM-1.1.0-yellow)](./agc-crash-cordova)| [![Download](https://img.shields.io/badge/DOWNLOAD-7/WEEK-yellow)](https://www.npmjs.com/package/@cordova-plugin-agconnect/crash)  | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-reactnative-usage-0000001063808390) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-cordova-0000001063808678) |
+| [agc-remoteconfig-reactnative](./agc-remoteconfig-reactnative) | [![version](https://img.shields.io/badge/NPM-1.1.0-yellow)](./agc-remoteconfig-reactnative) | [![Download](https://img.shields.io/badge/DOWNLOAD-5/WEEK-yellow)](https://www.npmjs.com/package/@reactnative-plugin-agconnect/remoteconfig) |[Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-remoteconfig-reactnative-usage-0000001064327774) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/cordova-remoteconfig-overview-0000001063967581) |
+| [agc-crash-reactnative](./agc-crash-reactnative) | [![version](https://img.shields.io/badge/NPM-1.1.0-yellow)](./agc-crash-reactnative)| [![Download](https://img.shields.io/badge/DOWNLOAD-7/WEEK-yellow)](https://www.npmjs.com/package/@reactnative-plugin-agconnect/crash)  | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-crash-reactnative-usage-0000001063728095) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-cordova-0000001063808678) |
 
 ## Precautions
-The agc-cordova-plugin project contains 2 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
+The agc-reactnative-plugin project contains 2 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
 
 ## Question or issues
 If you have questions about how to use AppGallery Connect Demos, try the following options:  
