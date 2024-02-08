@@ -1,0 +1,25 @@
+{
+  "name": "@hw-agconnect/react-native-applinking-demo",
+  "version": "1.9.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@hw-agconnect/react-native-applinking": "file:../",
+    "react": "18.2.0",
+    "react-native": "0.72.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.0",
+    "metro-react-native-babel-preset": "^0.60.0",
+    "ncp": "^2.0.0",
+    "@react-native/metro-config": "^0.72.11"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

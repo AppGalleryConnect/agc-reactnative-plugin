@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EB7AE90266A3C9E006A01BD /* ConcurrentHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7AE8F266A3C9E006A01BD /* ConcurrentHashMap.swift */; };
+		8479FF532B35BA3000C8F13D /* AGCCloudStorageMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF3E2B35BA2F00C8F13D /* AGCCloudStorageMaps.swift */; };
+		8479FF542B35BA3000C8F13D /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF3F2B35BA2F00C8F13D /* ObjC.m */; };
+		8479FF552B35BA3000C8F13D /* AGCCloudStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF402B35BA2F00C8F13D /* AGCCloudStorage.m */; };
+		8479FF562B35BA3000C8F13D /* ListResultImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF412B35BA2F00C8F13D /* ListResultImpl.swift */; };
+		8479FF572B35BA3000C8F13D /* StorageTaskImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF432B35BA3000C8F13D /* StorageTaskImpl.swift */; };
+		8479FF582B35BA3000C8F13D /* StorageManagementImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF442B35BA3000C8F13D /* StorageManagementImpl.m */; };
+		8479FF592B35BA3000C8F13D /* TaskImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF452B35BA3000C8F13D /* TaskImpl.m */; };
+		8479FF5A2B35BA3000C8F13D /* StorageManagementImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF462B35BA3000C8F13D /* StorageManagementImpl.swift */; };
+		8479FF5B2B35BA3000C8F13D /* TaskImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF472B35BA3000C8F13D /* TaskImpl.swift */; };
+		8479FF5C2B35BA3000C8F13D /* StorageTaskImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF482B35BA3000C8F13D /* StorageTaskImpl.m */; };
+		8479FF5D2B35BA3000C8F13D /* FileMetadataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF492B35BA3000C8F13D /* FileMetadataImpl.swift */; };
+		8479FF5E2B35BA3000C8F13D /* AGCStorageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF4A2B35BA3000C8F13D /* AGCStorageHandler.swift */; };
+		8479FF5F2B35BA3000C8F13D /* ListResultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF4C2B35BA3000C8F13D /* ListResultImpl.m */; };
+		8479FF602B35BA3000C8F13D /* StorageReferenceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF4D2B35BA3000C8F13D /* StorageReferenceImpl.swift */; };
+		8479FF612B35BA3000C8F13D /* StorageResultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF4E2B35BA3000C8F13D /* StorageResultImpl.m */; };
+		8479FF622B35BA3000C8F13D /* StorageReferenceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF4F2B35BA3000C8F13D /* StorageReferenceImpl.m */; };
+		8479FF632B35BA3000C8F13D /* StorageResultImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF502B35BA3000C8F13D /* StorageResultImpl.swift */; };
+		8479FF642B35BA3000C8F13D /* FileMetadataImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF512B35BA3000C8F13D /* FileMetadataImpl.m */; };
+		8479FF652B35BA3000C8F13D /* AGCCloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479FF522B35BA3000C8F13D /* AGCCloudStorage.swift */; };
+		A63300D70B3D467FA3C564B4 /* Pods_AgcCloudStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E58B2E667D086194BE43E /* Pods_AgcCloudStorage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DFDFB743FA0E4C50824130E /* Pods-AgcCloudStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgcCloudStorage.release.xcconfig"; path = "Target Support Files/Pods-AgcCloudStorage/Pods-AgcCloudStorage.release.xcconfig"; sourceTree = "<group>"; };
+		0EB7AE8F266A3C9E006A01BD /* ConcurrentHashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentHashMap.swift; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libAgcCloudStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAgcCloudStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E58B2E667D086194BE43E /* Pods_AgcCloudStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgcCloudStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8479FF3D2B35BA2F00C8F13D /* AgcCloudStorage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AgcCloudStorage-Bridging-Header.h"; sourceTree = "<group>"; };
+		8479FF3E2B35BA2F00C8F13D /* AGCCloudStorageMaps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCCloudStorageMaps.swift; sourceTree = "<group>"; };
+		8479FF3F2B35BA2F00C8F13D /* ObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjC.m; sourceTree = "<group>"; };
+		8479FF402B35BA2F00C8F13D /* AGCCloudStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCCloudStorage.m; sourceTree = "<group>"; };
+		8479FF412B35BA2F00C8F13D /* ListResultImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListResultImpl.swift; sourceTree = "<group>"; };
+		8479FF422B35BA2F00C8F13D /* ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjC.h; sourceTree = "<group>"; };
+		8479FF432B35BA3000C8F13D /* StorageTaskImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTaskImpl.swift; sourceTree = "<group>"; };
+		8479FF442B35BA3000C8F13D /* StorageManagementImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageManagementImpl.m; sourceTree = "<group>"; };
+		8479FF452B35BA3000C8F13D /* TaskImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskImpl.m; sourceTree = "<group>"; };
+		8479FF462B35BA3000C8F13D /* StorageManagementImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManagementImpl.swift; sourceTree = "<group>"; };
+		8479FF472B35BA3000C8F13D /* TaskImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskImpl.swift; sourceTree = "<group>"; };
+		8479FF482B35BA3000C8F13D /* StorageTaskImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageTaskImpl.m; sourceTree = "<group>"; };
+		8479FF492B35BA3000C8F13D /* FileMetadataImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileMetadataImpl.swift; sourceTree = "<group>"; };
+		8479FF4A2B35BA3000C8F13D /* AGCStorageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCStorageHandler.swift; sourceTree = "<group>"; };
+		8479FF4B2B35BA3000C8F13D /* AGCCloudStorage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGCCloudStorage-Bridging-Header.h"; sourceTree = "<group>"; };
+		8479FF4C2B35BA3000C8F13D /* ListResultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListResultImpl.m; sourceTree = "<group>"; };
+		8479FF4D2B35BA3000C8F13D /* StorageReferenceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageReferenceImpl.swift; sourceTree = "<group>"; };
+		8479FF4E2B35BA3000C8F13D /* StorageResultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageResultImpl.m; sourceTree = "<group>"; };
+		8479FF4F2B35BA3000C8F13D /* StorageReferenceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageReferenceImpl.m; sourceTree = "<group>"; };
+		8479FF502B35BA3000C8F13D /* StorageResultImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageResultImpl.swift; sourceTree = "<group>"; };
+		8479FF512B35BA3000C8F13D /* FileMetadataImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileMetadataImpl.m; sourceTree = "<group>"; };
+		8479FF522B35BA3000C8F13D /* AGCCloudStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGCCloudStorage.swift; sourceTree = "<group>"; };
+		F81629226F31721668419929 /* Pods-AgcCloudStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgcCloudStorage.debug.xcconfig"; path = "Target Support Files/Pods-AgcCloudStorage/Pods-AgcCloudStorage.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63300D70B3D467FA3C564B4 /* Pods_AgcCloudStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112C7B3B9BE2F3DE8D09D450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F81629226F31721668419929 /* Pods-AgcCloudStorage.debug.xcconfig */,
+				0DFDFB743FA0E4C50824130E /* Pods-AgcCloudStorage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libAgcCloudStorage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BF28FE181F7EE575480C7E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				739E58B2E667D086194BE43E /* Pods_AgcCloudStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				8479FF4B2B35BA3000C8F13D /* AGCCloudStorage-Bridging-Header.h */,
+				8479FF402B35BA2F00C8F13D /* AGCCloudStorage.m */,
+				8479FF522B35BA3000C8F13D /* AGCCloudStorage.swift */,
+				8479FF3E2B35BA2F00C8F13D /* AGCCloudStorageMaps.swift */,
+				8479FF4A2B35BA3000C8F13D /* AGCStorageHandler.swift */,
+				8479FF512B35BA3000C8F13D /* FileMetadataImpl.m */,
+				8479FF492B35BA3000C8F13D /* FileMetadataImpl.swift */,
+				8479FF4C2B35BA3000C8F13D /* ListResultImpl.m */,
+				8479FF412B35BA2F00C8F13D /* ListResultImpl.swift */,
+				8479FF422B35BA2F00C8F13D /* ObjC.h */,
+				8479FF3F2B35BA2F00C8F13D /* ObjC.m */,
+				8479FF442B35BA3000C8F13D /* StorageManagementImpl.m */,
+				8479FF462B35BA3000C8F13D /* StorageManagementImpl.swift */,
+				8479FF4F2B35BA3000C8F13D /* StorageReferenceImpl.m */,
+				8479FF4D2B35BA3000C8F13D /* StorageReferenceImpl.swift */,
+				8479FF4E2B35BA3000C8F13D /* StorageResultImpl.m */,
+				8479FF502B35BA3000C8F13D /* StorageResultImpl.swift */,
+				8479FF482B35BA3000C8F13D /* StorageTaskImpl.m */,
+				8479FF432B35BA3000C8F13D /* StorageTaskImpl.swift */,
+				8479FF452B35BA3000C8F13D /* TaskImpl.m */,
+				8479FF472B35BA3000C8F13D /* TaskImpl.swift */,
+				0EB7AE8F266A3C9E006A01BD /* ConcurrentHashMap.swift */,
+				134814211AA4EA7D00B7C361 /* Products */,
+				112C7B3B9BE2F3DE8D09D450 /* Pods */,
+				4BF28FE181F7EE575480C7E9 /* Frameworks */,
+				8479FF3D2B35BA2F00C8F13D /* AgcCloudStorage-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* AgcCloudStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "AgcCloudStorage" */;
+			buildPhases = (
+				E552306BF9CA2D500D52A784 /* [CP] Check Pods Manifest.lock */,
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgcCloudStorage;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libAgcCloudStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "AgcCloudStorage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* AgcCloudStorage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E552306BF9CA2D500D52A784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgcCloudStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8479FF562B35BA3000C8F13D /* ListResultImpl.swift in Sources */,
+				8479FF532B35BA3000C8F13D /* AGCCloudStorageMaps.swift in Sources */,
+				8479FF5E2B35BA3000C8F13D /* AGCStorageHandler.swift in Sources */,
+				8479FF592B35BA3000C8F13D /* TaskImpl.m in Sources */,
+				8479FF572B35BA3000C8F13D /* StorageTaskImpl.swift in Sources */,
+				0EB7AE90266A3C9E006A01BD /* ConcurrentHashMap.swift in Sources */,
+				8479FF5A2B35BA3000C8F13D /* StorageManagementImpl.swift in Sources */,
+				8479FF612B35BA3000C8F13D /* StorageResultImpl.m in Sources */,
+				8479FF552B35BA3000C8F13D /* AGCCloudStorage.m in Sources */,
+				8479FF5D2B35BA3000C8F13D /* FileMetadataImpl.swift in Sources */,
+				8479FF652B35BA3000C8F13D /* AGCCloudStorage.swift in Sources */,
+				8479FF582B35BA3000C8F13D /* StorageManagementImpl.m in Sources */,
+				8479FF602B35BA3000C8F13D /* StorageReferenceImpl.swift in Sources */,
+				8479FF622B35BA3000C8F13D /* StorageReferenceImpl.m in Sources */,
+				8479FF5F2B35BA3000C8F13D /* ListResultImpl.m in Sources */,
+				8479FF542B35BA3000C8F13D /* ObjC.m in Sources */,
+				8479FF642B35BA3000C8F13D /* FileMetadataImpl.m in Sources */,
+				8479FF5C2B35BA3000C8F13D /* StorageTaskImpl.m in Sources */,
+				8479FF632B35BA3000C8F13D /* StorageResultImpl.swift in Sources */,
+				8479FF5B2B35BA3000C8F13D /* TaskImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81629226F31721668419929 /* Pods-AgcCloudStorage.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AgcCloudStorage;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AgcCloudStorage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFDFB743FA0E4C50824130E /* Pods-AgcCloudStorage.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = AgcCloudStorage;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AgcCloudStorage-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "AgcCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "AgcCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}

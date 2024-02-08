@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.dependency "React"
   # Huawei AGConnectAppMessaging Kit SDK
-  s.dependency "AGConnectAppMessaging", "1.2.1.300"
+  s.dependency "AGConnectAppMessaging", "1.9.0.300"
 
 end

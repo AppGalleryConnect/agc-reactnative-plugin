@@ -1,17 +1,17 @@
 /*
- Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
- Licensed under the Apache License, Version 2.0 (the "License")
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- https://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
+ * Copyright (c) 2020-2023. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 import Foundation
@@ -120,10 +120,14 @@ class AGCAppmessaging: RCTEventEmitter, AgcAppmessagingHandling{
     ///   - location: Location instance that will be get via Constants.
     ///   - resolve:  In the success scenario, Boolean instance, true, is returned.
     ///   - reject:  Exception instance is returned in the failure scenario.
-    @objc func setDisplayLocation(_ location: Int, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
+    @objc func setDisplayLocation(_ location: String, resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
         AgcAppmessagingLog.debug(#function) { [weak self] in
             guard let strongSelf = self else {return}
-            strongSelf.viewModel.setDisplayLocation(location: location)
+            var loc = 0;
+            if location == "CENTER"   {
+                loc = 1;
+            }
+            strongSelf.viewModel.setDisplayLocation(location: loc)
             strongSelf.handle(resolve: resolve, true)
         }
     }
@@ -274,6 +278,7 @@ class AGCAppmessaging: RCTEventEmitter, AgcAppmessagingHandling{
             }
             if let majorButtonActionURL = message.majorButton?.actionURL?.absoluteString {
                 majorButton["actionURL"] = majorButtonActionURL
+                 majorButton["actionType"] = message.majorButton?.actionType.rawValue
             }
             card["majorButton"] = majorButton
 
@@ -289,6 +294,7 @@ class AGCAppmessaging: RCTEventEmitter, AgcAppmessagingHandling{
             }
             if let minorButtonActionURL = message.minorButton?.actionURL?.absoluteString {
                 minorButton["actionURL"] = minorButtonActionURL
+                minorButton["actionType"] = message.minorButton?.actionType.rawValue
             }
             card["minorButton"] = minorButton
             appMessageData["card"] = card
@@ -296,6 +302,7 @@ class AGCAppmessaging: RCTEventEmitter, AgcAppmessagingHandling{
             var picture:[String: Any] = [:]
             picture["pictureURL"] = message.pictureURL?.absoluteString
             picture["actionURL"] = message.actionURL?.absoluteString
+             picture["actionType"] = message.actionType.rawValue
             appMessageData["picture"] = picture
         }
         else if let message = appMessage as? AGCAppMessagingBannerDisplay {
@@ -310,6 +317,7 @@ class AGCAppmessaging: RCTEventEmitter, AgcAppmessagingHandling{
             banner["backgroundColorOpenness"] = Double (message.backgroundColor.cgColor.alpha)
             banner["pictureURL"] = message.pictureURL?.absoluteString
             banner["actionURL"] = message.actionURL?.absoluteString
+            banner["actionType"] = message.actionType.rawValue
             appMessageData["banner"] = banner
         }
         return appMessageData

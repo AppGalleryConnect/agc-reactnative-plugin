@@ -1,18 +1,18 @@
 /*
-    Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
-    Licensed under the Apache License, Version 2.0 (the "License")
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        https://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
+ * Copyright (c) 2020-2023. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package com.huawei.agc.rn.appmessaging;
 
@@ -79,7 +79,7 @@ public class AgcAppMessagingModule extends ReactContextBaseJavaModule {
             setIsCustomViewActivated(true);
             setCurrentAppMessage(appMessage);
             setAgConnectAppMessagingCallback(agConnectAppMessagingCallback);
-            if (getMContext() == null || getMContext().getCurrentActivity() == null) {
+            if (getMContext() == null) {
                 return;
             }
             mContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("customView", AgcAppMessagingJsonUtils.toJSON(appMessage));
@@ -206,7 +206,7 @@ public class AgcAppMessagingModule extends ReactContextBaseJavaModule {
      */
     private void addNotifications() {
         agConnectAppMessaging.addOnDisplayListener(appMessage -> weakContext.get().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onMessageDisplay", AgcAppMessagingJsonUtils.toJSON(appMessage))); //sendEvent("onMessageDisplay", appMessage));
-        agConnectAppMessaging.addOnClickListener(appMessage -> weakContext.get().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onMessageClick", AgcAppMessagingJsonUtils.toJSON(appMessage))); //sendEvent("onMessageClick", appMessage));
+        agConnectAppMessaging.addOnClickListener((appMessage, action) -> weakContext.get().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onMessageClick", AgcAppMessagingJsonUtils.toJSON(appMessage))); //sendEvent("onMessageClick", appMessage, action));
         agConnectAppMessaging.addOnDismissListener((appMessage, dismissType) -> weakContext.get().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onMessageDismiss", AgcAppMessagingJsonUtils.toJSON(appMessage))); //sendEvent("onMessageDismiss", appMessage, dismissType));
         agConnectAppMessaging.addOnErrorListener(appMessage -> weakContext.get().getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit("onMessageError", AgcAppMessagingJsonUtils.toJSON(appMessage))); //sendEvent("onMessageError", appMessage));
     }
@@ -273,5 +273,12 @@ public class AgcAppMessagingModule extends ReactContextBaseJavaModule {
         public void onFail(Exception exception) {
             promise.reject(exception);
         }
+    }
+
+    @ReactMethod
+    public void addListener(String eventName) {
+    }
+    @ReactMethod
+    public void removeListeners(Integer count) {
     }
 }

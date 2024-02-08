@@ -20,7 +20,7 @@ This demo project is an example to demonstrate the features of the **AGC React-N
 
 ## 2. Installation
 
-Before you get started, you must register as a HUAWEI Developer and complete identity verification on the [HUAWEI Developer](https://developer.huawei.com/consumer/en/) website. For details, please refer to [Register a HUAWEI ID](https://developer.huawei.com/consumer/en/doc/10104).
+Before you get started, you must register as a HUAWEI Developer and complete identity verification on the [HUAWEI Developer](https://developer.huawei.com/consumer/en/) website. For details, please refer to [Register a HUAWEI ID](https://developer.huawei.com/consumer/en/doc/start/registration-and-verification-0000001053628148).
 
 ### Creating a Project in AppGallery Connect
 
@@ -49,16 +49,16 @@ You need to enable App Messaging before using it. If you have enabled it, skip t
 
 **Step 5:**  The **App Messaging** service uses HUAWEI Analytics to report in-app message events. Therefore, you need to enable HUAWEI Analytics before integrating the App Messaging SDK. For details, please refer to [Enabling HUAWEI Analytics](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/service-enabling-0000001050745155).
 
-For further details, please refer to [Enabling App Messaging](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-appmessage-getstarted#h1-1606373400682).
+For further details, please refer to [Enabling App Messaging](https://developer.huawei.com/consumer/en/doc/AppGallery-connect-Guides/agc-appmessaging-enableservice-0000001322456700).
 
 ### Integrating the React-Native AppMessaging Plugin
 
-Before using **@react-native-agconnect/appmessaging**, ensure that the ReactNative development environment has been installed.
+Before using **@hw-agconnect/react-native-appmessaging**, ensure that the ReactNative development environment has been installed.
 
 ### Install via NPM
 
 ```
-npm i @react-native-agconnect/appmessaging
+npm i @hw-agconnect/react-native-appmessaging
 ```
 
 #### Android App Development
@@ -166,7 +166,7 @@ Run the following command to start the demo app.
 
 ## 3. Configuration
 
-[Enabling App Messaging](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-appmessage-getstarted#h1-1606373400682)
+[Enabling App Messaging](https://developer.huawei.com/consumer/en/doc/AppGallery-connect-Guides/agc-appmessaging-enableservice-0000001322456700)
 
 ### Accessing Analytics Kit
 

@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+        buildToolsVersion = "33.0.0"
+        minSdkVersion = 21
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+        ndkVersion = "23.1.7779620"
+    }
+    repositories {
+        maven { url 'https://developer.huawei.com/repo/' }
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.4.2")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath ('com.huawei.agconnect:agcp:1.9.1.301')
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+        maven { url 'https://developer.huawei.com/repo/' }
+        mavenCentral {
+            content {
+                excludeGroup "com.facebook.react"
+            }
+        }
+    }
+}
