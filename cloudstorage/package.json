@@ -1,0 +1,41 @@
+{
+  "name": "@hw-agconnect/react-native-storage",
+  "title": "React Native AGC Storage",
+  "description": "React Native AGC Storage",
+  "version": "1.9.0",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
+  },
+  "homepage": "https://developer.huawei.com/consumer/en/agconnect/",
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENCE",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "react-native",
+    "react-native-storage",
+    "agc-storage",
+    "huawei-storage",
+    "storage-kit"
+  ],
+  "files": [
+    ".docs",
+    "android",
+    "ios",
+    "src",
+    "LICENCE",
+    "README.md",
+    "package.json",
+    "RNAGCStorage.podspec"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-native": ">=0.60.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.6"
+  }
+}

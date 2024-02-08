@@ -1,0 +1,23 @@
+{
+  "fileVersion": "1",
+  "name": "React-Native-Agconnect-Storage",
+  "description": "",
+  "zipName": "reactnative-storage-package",
+  "packageName": "react-native-agconnect-storage",
+  "version": "1.5.0.300",
+  "type": "microService",
+  "processes": {
+    "React-Native-Agconnect-Storage": {
+      "subscribes": []
+    }
+  },
+  "files": [
+    "android",
+    "ios",
+    "example",
+    "src",
+    "LICENCE",
+    "README.md",
+    "package.json"
+  ]
+}

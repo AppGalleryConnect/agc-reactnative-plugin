@@ -1,21 +1,21 @@
 /*
-    Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
-    Licensed under the Apache License, Version 2.0 (the "License")
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        https://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
+ * Copyright (c) 2020-2023. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 import React from 'react';
-import AGCAppMessaging from '@react-native-agconnect/appmessaging';
+import AGCAppMessaging from '@hw-agconnect/react-native-appmessaging';
 import {Alert, Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -95,26 +95,27 @@ export default class App extends React.Component {
      * Data synchronization from the AppGallery Connect server.
      */
     setFetchMessageEnable() {
-        AGCAppMessaging.getInstance().setFetchMessageEnable(true).then(result => {
-            Alert.alert("[setFetchMessageEnable] " + JSON.stringify(result));
-            this.createCustomView("setFetchMessageEnable :  ", JSON.stringify(result) + "")
-        }).catch((err) => {
-            Alert.alert("[setFetchMessageEnable] Error/Exception: " + JSON.stringify(err));
-            this.createCustomView("[setFetchMessageEnable] Error/Exception: ", JSON.stringify(err) + "")
-        });
+
+         AGCAppMessaging.getInstance().setFetchMessageEnable(true).then(result => {
+             Alert.alert("[setFetchMessageEnable] " + JSON.stringify(result));
+             this.createCustomView("setFetchMessageEnable :  ", JSON.stringify(result) + "")
+         }).catch((err) => {
+             Alert.alert("[setFetchMessageEnable] Error/Exception: " + JSON.stringify(err));
+             this.createCustomView("[setFetchMessageEnable] Error/Exception: ", JSON.stringify(err) + "")
+         });
     }
 
     /**
      * Sets displayEnable in AGCAppMessaging.
      */
     setDisplayEnable() {
-        AGCAppMessaging.getInstance().setDisplayEnable(false).then(result => {
-            Alert.alert("[setDisplayEnable] " + JSON.stringify(result));
-            this.createCustomView("setDisplayEnable :  ", JSON.stringify(result) + "")
-        }).catch((err) => {
-            Alert.alert("[setDisplayEnable] Error/Exception: " + JSON.stringify(err));
-            this.createCustomView("[setDisplayEnable] Error/Exception: ", JSON.stringify(err) + "")
-        });
+         AGCAppMessaging.getInstance().setDisplayEnable(true).then(result => {
+             Alert.alert("[setDisplayEnable] " + JSON.stringify(result));
+             this.createCustomView("setDisplayEnable :  ", JSON.stringify(result) + "")
+         }).catch((err) => {
+             Alert.alert("[setDisplayEnable] Error/Exception: " + JSON.stringify(err));
+             this.createCustomView("[setDisplayEnable] Error/Exception: ", JSON.stringify(err) + "")
+         });
     }
 
     /**
@@ -187,7 +188,7 @@ export default class App extends React.Component {
      * Triggers message display.
      */
     trigger() {
-        AGCAppMessaging.getInstance().trigger("SOME_EVENT_ID").then(result => {
+        AGCAppMessaging.getInstance().trigger("$APPFIRSTOPEN").then(result => {
             Alert.alert("[trigger] " + JSON.stringify(result));
             this.createCustomView("trigger :  ", JSON.stringify(result) + "")
         }).catch((err) => {

@@ -1,39 +1,40 @@
 {
-  "name": "@react-native-agconnect/cloudfunctions-example",
-  "version": "1.2.0-beta.1",
-  "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start"
+  "name": "@hw-agconnect/react-native-cloudfunctions",
+  "title": "React Native AGC CloudFunctions",
+  "description": "React Native AGC CloudFunctions",
+  "version": "1.9.0",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
   },
-  "dependencies": {
-    "react": "^16.6.0",
-    "react-native": "^0.60.0",
-    "@react-native-agconnect/cloudfunctions": "1.2.0-beta.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/runtime": "^7.9.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "ncp": "^2.0.0",
-    "run-script-os": "^1.1.3"
-  },
-  "jest": {
-    "preset": "react-native"
-  },
+  "homepage": "https://developer.huawei.com/consumer/en/agconnect/",
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENCE",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "react-native",
+    "react-native-cloudfunctions",
+    "agc-cloudfunctions",
+    "huawei-cloudfunctions",
+    "cloudfunctions-kit"
+  ],
   "files": [
     "android",
     "ios",
     "src",
-    "app.json",
-    "App.js",
-    "babel.config.js",
-    "index.js",
     "LICENCE",
-    "metro.config.js",
-    "package.json",
     "README.md",
-    ".docs"
-  ]
+    "package.json",
+    "RNAGCCloudFunctions.podspec"
+  ],
+  "peerDependencies": {
+    "react": "^16.6.0",
+    "react-native": ">=0.60.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.6"
+  }
 }

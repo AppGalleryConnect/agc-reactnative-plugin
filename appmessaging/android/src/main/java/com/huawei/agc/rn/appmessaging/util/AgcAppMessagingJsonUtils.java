@@ -1,18 +1,18 @@
 /*
-    Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
-
-    Licensed under the Apache License, Version 2.0 (the "License")
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        https://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
+ * Copyright (c) 2020-2023. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package com.huawei.agc.rn.appmessaging.util;
 
@@ -23,7 +23,6 @@ import com.huawei.agconnect.appmessaging.model.AppMessage;
 import com.huawei.agconnect.appmessaging.model.BannerMessage;
 import com.huawei.agconnect.appmessaging.model.CardMessage;
 import com.huawei.agconnect.appmessaging.model.PictureMessage;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -84,7 +83,8 @@ public enum AgcAppMessagingJsonUtils {
                     .put("backgroundColor", banner.getBackgroundColor())
                     .put("backgroundColorOpenness", banner.getBackgroundColorOpenness())
                     .put("pictureURL", banner.getPictureUrl())
-                    .put("actionURL", banner.getActionUrl());
+                    .put("actionURL", banner.getActionUrl())
+                    .put("actionType",banner.getActionType());
         }
         return json;
     }
@@ -95,7 +95,8 @@ public enum AgcAppMessagingJsonUtils {
         if (picture != null) {
             json
                     .put("pictureURL", picture.getPictureUrl())
-                    .put("actionURL", picture.getActionUrl());
+                    .put("actionURL", picture.getActionUrl())
+                    .put("actionType",picture.getActionType());
         }
         return json;
     }
@@ -128,7 +129,8 @@ public enum AgcAppMessagingJsonUtils {
                     .put("text", button.getText())
                     .put("textColor", button.getTextColor())
                     .put("textColorOpenness", button.getTextColorOpenness())
-                    .put("actionURL", button.getActionUrl());
+                    .put("actionURL", button.getActionUrl())
+                    .put("actionType",button.getActionType());
         }
         return json;
     }

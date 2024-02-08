@@ -1,17 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.huawei.agc.rn.appmessaging.example">
+    package="com.huawei.agc.rn.appmessaging.exampleAndroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.huawei.agc.rn.appmessaging.example.MainApplication"
+        android:name="com.huawei.agc.rn.appmessaging.exampleAndroid.MainApplication"
         android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:allowBackup="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.huawei.agc.rn.appmessaging.example.MainActivity"
+            android:exported="true"
+            android:name="com.huawei.agc.rn.appmessaging.exampleAndroid.MainActivity"
             android:label="@string/app_name"
             android:configChanges="keyboard|keyboardHidden|screenSize|uiMode"
             android:launchMode="singleTask"
